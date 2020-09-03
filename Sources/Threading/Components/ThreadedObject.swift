@@ -21,7 +21,7 @@ open class ThreadedObject<Element> {
     /// serial.
     public private(set) var threadingType: ThreadingType
     
-    internal init(_ value: Element, type: ThreadingType) {
+    public init(_ value: Element, type: ThreadingType) {
         self.threadedValue = value
         self.threadingType = type
         if type == .concurrent {
