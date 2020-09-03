@@ -9,7 +9,7 @@ import Foundation
 
 /// Base class for all threaded objects. Provides asyncronous and syncronous
 /// views for writting and reading respectively.
-public class ThreadedObject<Element> {
+open class ThreadedObject<Element> {
     
     /// Underlying value to be accessed by the different views.
     internal var threadedValue: Element
